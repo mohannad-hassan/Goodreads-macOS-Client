@@ -32,19 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47B7E5DB1E0E3EA10021F0ED"
+               BlueprintIdentifier = "477305BD1E0E508F0025CADD"
                BuildableName = "Goodreads macOS ClientTests.xctest"
                BlueprintName = "Goodreads macOS ClientTests"
-               ReferencedContainer = "container:Goodreads macOS Client.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47B7E5E61E0E3EA10021F0ED"
-               BuildableName = "Goodreads macOS ClientUITests.xctest"
-               BlueprintName = "Goodreads macOS ClientUITests"
                ReferencedContainer = "container:Goodreads macOS Client.xcodeproj">
             </BuildableReference>
          </TestableReference>
