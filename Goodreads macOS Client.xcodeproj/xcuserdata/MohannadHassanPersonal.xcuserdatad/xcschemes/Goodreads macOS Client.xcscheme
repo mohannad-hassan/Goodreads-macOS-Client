@@ -38,6 +38,16 @@
                ReferencedContainer = "container:Goodreads macOS Client.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "477305CB1E0E51EF0025CADD"
+               BuildableName = "Goodreads macOS Client_Tests.xctest"
+               BlueprintName = "Goodreads macOS Client_Tests"
+               ReferencedContainer = "container:Goodreads macOS Client.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477305CF1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */; };
+		477305D71E0E51FF0025CADD /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */; };
 		47B7E5CF1E0E3EA10021F0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7E5CE1E0E3EA10021F0ED /* AppDelegate.swift */; };
 		47B7E5D11E0E3EA10021F0ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7E5D01E0E3EA10021F0ED /* ViewController.swift */; };
 		47B7E5D31E0E3EA10021F0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47B7E5D21E0E3EA10021F0ED /* Assets.xcassets */; };
@@ -16,7 +18,21 @@
 		47B7E6051E0E47A50021F0ED /* LoginModuleInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7E6041E0E47A50021F0ED /* LoginModuleInterfaces.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		477305D11E0E51EF0025CADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47B7E5C31E0E3EA10021F0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47B7E5CA1E0E3EA10021F0ED;
+			remoteInfo = "Goodreads macOS Client";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		477305CC1E0E51EF0025CADD /* Goodreads macOS Client_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goodreads macOS Client_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodreads_macOS_Client_Tests.swift; sourceTree = "<group>"; };
+		477305D01E0E51EF0025CADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		47B7E5CB1E0E3EA10021F0ED /* Goodreads macOS Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goodreads macOS Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B7E5CE1E0E3EA10021F0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47B7E5D01E0E3EA10021F0ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		477305C91E0E51EF0025CADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47B7E5C81E0E3EA10021F0ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +62,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		477305CD1E0E51EF0025CADD /* Goodreads macOS Client_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */,
+				477305D01E0E51EF0025CADD /* Info.plist */,
+				477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */,
+			);
+			path = "Goodreads macOS Client_Tests";
+			sourceTree = "<group>";
+		};
 		47B7E5C21E0E3EA10021F0ED = {
 			isa = PBXGroup;
 			children = (
 				47B7E5CD1E0E3EA10021F0ED /* Goodreads macOS Client */,
+				477305CD1E0E51EF0025CADD /* Goodreads macOS Client_Tests */,
 				47B7E5CC1E0E3EA10021F0ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				47B7E5CB1E0E3EA10021F0ED /* Goodreads macOS Client.app */,
+				477305CC1E0E51EF0025CADD /* Goodreads macOS Client_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +116,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		477305CB1E0E51EF0025CADD /* Goodreads macOS Client_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477305D31E0E51EF0025CADD /* Build configuration list for PBXNativeTarget "Goodreads macOS Client_Tests" */;
+			buildPhases = (
+				477305C81E0E51EF0025CADD /* Sources */,
+				477305C91E0E51EF0025CADD /* Frameworks */,
+				477305CA1E0E51EF0025CADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				477305D21E0E51EF0025CADD /* PBXTargetDependency */,
+			);
+			name = "Goodreads macOS Client_Tests";
+			productName = "Goodreads macOS Client_Tests";
+			productReference = 477305CC1E0E51EF0025CADD /* Goodreads macOS Client_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		47B7E5CA1E0E3EA10021F0ED /* Goodreads macOS Client */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47B7E5F01E0E3EA10021F0ED /* Build configuration list for PBXNativeTarget "Goodreads macOS Client" */;
@@ -108,6 +161,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Mohannad Hassan";
 				TargetAttributes = {
+					477305CB1E0E51EF0025CADD = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 47B7E5CA1E0E3EA10021F0ED;
+					};
 					47B7E5CA1E0E3EA10021F0ED = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -128,11 +186,19 @@
 			projectRoot = "";
 			targets = (
 				47B7E5CA1E0E3EA10021F0ED /* Goodreads macOS Client */,
+				477305CB1E0E51EF0025CADD /* Goodreads macOS Client_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		477305CA1E0E51EF0025CADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47B7E5C91E0E3EA10021F0ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +212,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		477305C81E0E51EF0025CADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477305D71E0E51FF0025CADD /* LoginViewControllerTests.swift in Sources */,
+				477305CF1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47B7E5C71E0E3EA10021F0ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +234,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		477305D21E0E51EF0025CADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47B7E5CA1E0E3EA10021F0ED /* Goodreads macOS Client */;
+			targetProxy = 477305D11E0E51EF0025CADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		47B7E5D41E0E3EA10021F0ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -171,6 +254,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		477305D41E0E51EF0025CADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Goodreads macOS Client_Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mohannadAH.Goodreads-macOS-Client-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goodreads macOS Client.app/Contents/MacOS/Goodreads macOS Client";
+			};
+			name = Debug;
+		};
+		477305D51E0E51EF0025CADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Goodreads macOS Client_Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mohannadAH.Goodreads-macOS-Client-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goodreads macOS Client.app/Contents/MacOS/Goodreads macOS Client";
+			};
+			name = Release;
+		};
 		47B7E5EE1E0E3EA10021F0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -290,6 +401,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		477305D31E0E51EF0025CADD /* Build configuration list for PBXNativeTarget "Goodreads macOS Client_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477305D41E0E51EF0025CADD /* Debug */,
+				477305D51E0E51EF0025CADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		47B7E5C61E0E3EA10021F0ED /* Build configuration list for PBXProject "Goodreads macOS Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
