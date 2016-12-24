@@ -8,6 +8,17 @@
 
 import Cocoa
 
-class LoginPresentor: NSObject {
+class LoginPresentor: LoginModuleInterface {
+    
+    let interactor: LoginInteractor
+    let view: LoginViewInterface
+    
+    public init(interactor: LoginInteractor, view: LoginViewInterface) {
+        self.interactor = interactor
+        self.view = view
+    }
 
+    func authenticate(callback: (AuthenticationFeedback) -> Void) {
+        
+    }
 }

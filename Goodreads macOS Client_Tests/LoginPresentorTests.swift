@@ -7,12 +7,16 @@
 //
 
 import XCTest
+@testable import Goodreads_macOS_Client
 
 class LoginPresentorTests: XCTestCase {
+    
+    var loginPresentor: LoginPresentor!
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        loginPresentor = LoginPresentor(interactor: LoginInteractor(),
+                                        view: LoginViewController(nibName: "LoginView", bundle: nil)!)
     }
     
     override func tearDown() {
