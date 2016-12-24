@@ -9,5 +9,8 @@
 import Cocoa
 
 class AuthenticationCenter: NSObject {
-
+    
+    public func authenticate(callback: (AuthenticationFeedback) -> Void) {
+        
+    }
 }

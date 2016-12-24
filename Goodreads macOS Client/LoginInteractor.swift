@@ -9,5 +9,15 @@
 import Cocoa
 
 class LoginInteractor: NSObject {
+    
+    let authenticationCenter: AuthenticationCenter
+    
+    init(authenticationCenter: AuthenticationCenter) {
+        self.authenticationCenter = authenticationCenter
+    }
+    
+    public func authenticate(callback: (AuthenticationFeedback) -> Void) {
+        authenticationCenter.authenticate(callback: callback)
+    }
 
 }

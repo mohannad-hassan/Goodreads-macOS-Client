@@ -15,7 +15,7 @@ class LoginPresentorTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        loginPresentor = LoginPresentor(interactor: LoginInteractor(),
+        loginPresentor = LoginPresentor(interactor: LoginInteractor(authenticationCenter: AuthenticationCenter()),
                                         view: LoginViewController(nibName: "LoginView", bundle: nil)!)
     }
     
