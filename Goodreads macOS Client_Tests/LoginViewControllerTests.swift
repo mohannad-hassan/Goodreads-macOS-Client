@@ -7,12 +7,19 @@
 //
 
 import XCTest
+@testable import Goodreads_macOS_Client
 
 class LoginViewControllerTests: XCTestCase {
+    
+    var loginViewController: LoginViewController!
+    var moduleInterfaceMock: LoginModuleInterface!
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        moduleInterfaceMock = LoginModuleInterfaceMock()
+        
+        loginViewController = LoginViewController(nibName: "LoginView", bundle: nil)
+        loginViewController.moduleInterface = moduleInterfaceMock
     }
     
     override func tearDown() {
@@ -32,4 +39,11 @@ class LoginViewControllerTests: XCTestCase {
         }
     }
 
+}
+
+private class LoginModuleInterfaceMock: LoginModuleInterface {
+ 
+    func authenticate(callback: (AuthenticationFeedback) -> Void) {
+        
+    }
 }
