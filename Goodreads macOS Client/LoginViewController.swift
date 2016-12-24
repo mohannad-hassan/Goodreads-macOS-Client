@@ -8,11 +8,19 @@
 
 import Cocoa
 
-class LoginViewController: NSViewController {
+class LoginViewController: NSViewController, LoginViewInterface {
 
+    @IBOutlet weak var loginButton: NSButton!
+    var moduleInterface: LoginModuleInterface?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
+    
+    public func displayLoginButton() {
+        loginButton.isEnabled = true
+    }
+    
     
 }
