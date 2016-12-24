@@ -20,25 +20,19 @@ class LoginViewControllerTests: XCTestCase {
         
         loginViewController = LoginViewController(nibName: "LoginView", bundle: nil)
         loginViewController.moduleInterface = moduleInterfaceMock
+        loginViewController.loadView()
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testDisplayButton() {
+        loginViewController.displayLoginButton()
+        let button: NSButton = loginViewController.view.viewWithTag(1) as! NSButton
+        assert(button.isEnabled, "Button is not enabled")
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testButtonDisabledAfterLoading() {
+        let button: NSButton = loginViewController.view.viewWithTag(1) as! NSButton
+        assert(!button.isEnabled, "Button is enabled")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
 
 private class LoginModuleInterfaceMock: LoginModuleInterface {

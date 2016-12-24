@@ -9,6 +9,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="LoginViewController" customModule="Goodreads_macOS_Client" customModuleProvider="target">
             <connections>
                 <outlet property="loginButton" destination="HZY-gs-btw" id="XUt-GA-9F1"/>
+                <outlet property="view" destination="c22-O7-iKe" id="yKs-qh-Xxv"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -17,10 +18,10 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZY-gs-btw">
+                <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="HZY-gs-btw">
                     <rect key="frame" x="216" y="112" width="48" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="square" title="Login" bezelStyle="shadowlessSquare" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="f5v-C6-mNL">
+                    <buttonCell key="cell" type="square" title="Login" bezelStyle="shadowlessSquare" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" inset="2" id="f5v-C6-mNL">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>

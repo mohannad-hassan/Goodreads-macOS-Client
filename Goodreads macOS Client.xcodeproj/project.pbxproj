@@ -65,9 +65,9 @@
 		477305CD1E0E51EF0025CADD /* Goodreads macOS Client_Tests */ = {
 			isa = PBXGroup;
 			children = (
+				477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */,
 				477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */,
 				477305D01E0E51EF0025CADD /* Info.plist */,
-				477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */,
 			);
 			path = "Goodreads macOS Client_Tests";
 			sourceTree = "<group>";
@@ -408,6 +408,7 @@
 				477305D51E0E51EF0025CADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47B7E5C61E0E3EA10021F0ED /* Build configuration list for PBXProject "Goodreads macOS Client" */ = {
 			isa = XCConfigurationList;
