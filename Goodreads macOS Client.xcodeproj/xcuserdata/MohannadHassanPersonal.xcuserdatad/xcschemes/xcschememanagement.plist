@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Goodreads macOS Client.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>477305AB1E0E4CB10025CADD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>477305BD1E0E508F0025CADD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>477305CB1E0E51EF0025CADD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47B7E5CA1E0E3EA10021F0ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47B7E5DB1E0E3EA10021F0ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47B7E5E61E0E3EA10021F0ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -11,6 +11,7 @@
 		4743808C1E0E69EE00F4AEEA /* LoginPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743808B1E0E69EE00F4AEEA /* LoginPresentor.swift */; };
 		4743808E1E0E6A0200F4AEEA /* LoginPresentorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743808D1E0E6A0200F4AEEA /* LoginPresentorTests.swift */; };
 		474380901E0E6A1300F4AEEA /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743808F1E0E6A1300F4AEEA /* LoginInteractorTests.swift */; };
+		474380941E0E76FA00F4AEEA /* AuthenticationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474380931E0E76FA00F4AEEA /* AuthenticationCenter.swift */; };
 		477305CF1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */; };
 		477305D71E0E51FF0025CADD /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */; };
 		47B7E5CF1E0E3EA10021F0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7E5CE1E0E3EA10021F0ED /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		4743808B1E0E69EE00F4AEEA /* LoginPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresentor.swift; sourceTree = "<group>"; };
 		4743808D1E0E6A0200F4AEEA /* LoginPresentorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresentorTests.swift; sourceTree = "<group>"; };
 		4743808F1E0E6A1300F4AEEA /* LoginInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		474380931E0E76FA00F4AEEA /* AuthenticationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCenter.swift; sourceTree = "<group>"; };
 		477305CC1E0E51EF0025CADD /* Goodreads macOS Client_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goodreads macOS Client_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodreads_macOS_Client_Tests.swift; sourceTree = "<group>"; };
 		477305D01E0E51EF0025CADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				47B7E6041E0E47A50021F0ED /* LoginModuleInterfaces.swift */,
 				474380891E0E69E200F4AEEA /* LoginInteractor.swift */,
 				4743808B1E0E69EE00F4AEEA /* LoginPresentor.swift */,
+				474380931E0E76FA00F4AEEA /* AuthenticationCenter.swift */,
 			);
 			name = "Login View Module";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474380941E0E76FA00F4AEEA /* AuthenticationCenter.swift in Sources */,
 				4743808C1E0E69EE00F4AEEA /* LoginPresentor.swift in Sources */,
 				47B7E5FD1E0E45020021F0ED /* LoginViewController.swift in Sources */,
 				47B7E5D11E0E3EA10021F0ED /* ViewController.swift in Sources */,
