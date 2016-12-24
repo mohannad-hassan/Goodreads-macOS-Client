@@ -13,14 +13,14 @@ class LoginViewController: NSViewController, LoginViewInterface {
     @IBOutlet weak var loginButton: NSButton!
     var moduleInterface: LoginModuleInterface?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
-    }
-    
     public func displayLoginButton() {
         loginButton.isEnabled = true
     }
     
+    @IBAction func login(_ sender: NSButton) {
+        moduleInterface?.authenticate() {authenticationFeedback in
+            print(authenticationFeedback)
+        }
+    }
     
 }
