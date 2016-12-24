@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4743808A1E0E69E200F4AEEA /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474380891E0E69E200F4AEEA /* LoginInteractor.swift */; };
+		4743808C1E0E69EE00F4AEEA /* LoginPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743808B1E0E69EE00F4AEEA /* LoginPresentor.swift */; };
+		4743808E1E0E6A0200F4AEEA /* LoginPresentorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743808D1E0E6A0200F4AEEA /* LoginPresentorTests.swift */; };
+		474380901E0E6A1300F4AEEA /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4743808F1E0E6A1300F4AEEA /* LoginInteractorTests.swift */; };
 		477305CF1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */; };
 		477305D71E0E51FF0025CADD /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */; };
 		47B7E5CF1E0E3EA10021F0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7E5CE1E0E3EA10021F0ED /* AppDelegate.swift */; };
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		474380891E0E69E200F4AEEA /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		4743808B1E0E69EE00F4AEEA /* LoginPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresentor.swift; sourceTree = "<group>"; };
+		4743808D1E0E6A0200F4AEEA /* LoginPresentorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresentorTests.swift; sourceTree = "<group>"; };
+		4743808F1E0E6A1300F4AEEA /* LoginInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		477305CC1E0E51EF0025CADD /* Goodreads macOS Client_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goodreads macOS Client_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goodreads_macOS_Client_Tests.swift; sourceTree = "<group>"; };
 		477305D01E0E51EF0025CADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,12 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		474380911E0E6A9000F4AEEA /* Login Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4743808D1E0E6A0200F4AEEA /* LoginPresentorTests.swift */,
+				4743808F1E0E6A1300F4AEEA /* LoginInteractorTests.swift */,
+				477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */,
+			);
+			name = "Login Tests";
+			sourceTree = "<group>";
+		};
+		474380921E0E6A9B00F4AEEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47B7E5FA1E0E42600021F0ED /* LoginView.xib */,
+				47B7E5FC1E0E45020021F0ED /* LoginViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		477305CD1E0E51EF0025CADD /* Goodreads macOS Client_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				477305D61E0E51FF0025CADD /* LoginViewControllerTests.swift */,
 				477305CE1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift */,
 				477305D01E0E51EF0025CADD /* Info.plist */,
+				474380911E0E6A9000F4AEEA /* Login Tests */,
 			);
 			path = "Goodreads macOS Client_Tests";
 			sourceTree = "<group>";
@@ -106,9 +133,10 @@
 		47B7E5F91E0E422C0021F0ED /* Login View Module */ = {
 			isa = PBXGroup;
 			children = (
-				47B7E5FA1E0E42600021F0ED /* LoginView.xib */,
-				47B7E5FC1E0E45020021F0ED /* LoginViewController.swift */,
+				474380921E0E6A9B00F4AEEA /* View */,
 				47B7E6041E0E47A50021F0ED /* LoginModuleInterfaces.swift */,
+				474380891E0E69E200F4AEEA /* LoginInteractor.swift */,
+				4743808B1E0E69EE00F4AEEA /* LoginPresentor.swift */,
 			);
 			name = "Login View Module";
 			sourceTree = "<group>";
@@ -216,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474380901E0E6A1300F4AEEA /* LoginInteractorTests.swift in Sources */,
 				477305D71E0E51FF0025CADD /* LoginViewControllerTests.swift in Sources */,
+				4743808E1E0E6A0200F4AEEA /* LoginPresentorTests.swift in Sources */,
 				477305CF1E0E51EF0025CADD /* Goodreads_macOS_Client_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,9 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4743808C1E0E69EE00F4AEEA /* LoginPresentor.swift in Sources */,
 				47B7E5FD1E0E45020021F0ED /* LoginViewController.swift in Sources */,
 				47B7E5D11E0E3EA10021F0ED /* ViewController.swift in Sources */,
 				47B7E5CF1E0E3EA10021F0ED /* AppDelegate.swift in Sources */,
+				4743808A1E0E69E200F4AEEA /* LoginInteractor.swift in Sources */,
 				47B7E6051E0E47A50021F0ED /* LoginModuleInterfaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
