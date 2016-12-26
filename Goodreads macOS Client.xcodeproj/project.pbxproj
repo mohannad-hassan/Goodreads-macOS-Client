@@ -21,6 +21,7 @@
 		47B7E5FB1E0E42600021F0ED /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B7E5FA1E0E42600021F0ED /* LoginView.xib */; };
 		47B7E5FD1E0E45020021F0ED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7E5FC1E0E45020021F0ED /* LoginViewController.swift */; };
 		47B7E6051E0E47A50021F0ED /* LoginModuleInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7E6041E0E47A50021F0ED /* LoginModuleInterfaces.swift */; };
+		50BD0BEFF88D42B36F7ACD1E /* Pods_Goodreads_macOS_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27211ACBEF5BB4AD0618CDCA /* Pods_Goodreads_macOS_Client.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1518A1508239F7FD1F761016 /* Pods-Goodreads macOS Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goodreads macOS Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goodreads macOS Client/Pods-Goodreads macOS Client.release.xcconfig"; sourceTree = "<group>"; };
+		27211ACBEF5BB4AD0618CDCA /* Pods_Goodreads_macOS_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goodreads_macOS_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		474380891E0E69E200F4AEEA /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		4743808B1E0E69EE00F4AEEA /* LoginPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresentor.swift; sourceTree = "<group>"; };
 		4743808D1E0E6A0200F4AEEA /* LoginPresentorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresentorTests.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		47B7E5FA1E0E42600021F0ED /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		47B7E5FC1E0E45020021F0ED /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		47B7E6041E0E47A50021F0ED /* LoginModuleInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModuleInterfaces.swift; sourceTree = "<group>"; };
+		D74D9CE9081ADA754335E6C0 /* Pods-Goodreads macOS Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goodreads macOS Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goodreads macOS Client/Pods-Goodreads macOS Client.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +70,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BD0BEFF88D42B36F7ACD1E /* Pods_Goodreads_macOS_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		025098417AAC5CAE725E487E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D74D9CE9081ADA754335E6C0 /* Pods-Goodreads macOS Client.debug.xcconfig */,
+				1518A1508239F7FD1F761016 /* Pods-Goodreads macOS Client.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		474380911E0E6A9000F4AEEA /* Login Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +121,8 @@
 				47B7E5CD1E0E3EA10021F0ED /* Goodreads macOS Client */,
 				477305CD1E0E51EF0025CADD /* Goodreads macOS Client_Tests */,
 				47B7E5CC1E0E3EA10021F0ED /* Products */,
+				025098417AAC5CAE725E487E /* Pods */,
+				BD9B1220E4FAF0FD6EEBD5FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +160,14 @@
 			name = "Login View Module";
 			sourceTree = "<group>";
 		};
+		BD9B1220E4FAF0FD6EEBD5FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27211ACBEF5BB4AD0618CDCA /* Pods_Goodreads_macOS_Client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47B7E5F01E0E3EA10021F0ED /* Build configuration list for PBXNativeTarget "Goodreads macOS Client" */;
 			buildPhases = (
+				E65BA6FEBC0124558CE01030 /* [CP] Check Pods Manifest.lock */,
 				47B7E5C71E0E3EA10021F0ED /* Sources */,
 				47B7E5C81E0E3EA10021F0ED /* Frameworks */,
 				47B7E5C91E0E3EA10021F0ED /* Resources */,
+				9FF4CC3032D54AC1AE811485 /* [CP] Embed Pods Frameworks */,
+				2EAC28379982D3EF04A2CAE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +268,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EAC28379982D3EF04A2CAE2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goodreads macOS Client/Pods-Goodreads macOS Client-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FF4CC3032D54AC1AE811485 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goodreads macOS Client/Pods-Goodreads macOS Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E65BA6FEBC0124558CE01030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		477305C81E0E51EF0025CADD /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		47B7E5F11E0E3EA10021F0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74D9CE9081ADA754335E6C0 /* Pods-Goodreads macOS Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -423,6 +499,7 @@
 		};
 		47B7E5F21E0E3EA10021F0ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1518A1508239F7FD1F761016 /* Pods-Goodreads macOS Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
